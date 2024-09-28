@@ -1,22 +1,109 @@
-*{
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #0e0e0e;
+  font-family: cursive;
+}
+
+.main-container {
+  background-color: #4f5762;
+  height: 100vh;
+  margin-left: 35px;
+  margin-right: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  background-color: #0b131e;
+  height: 85vh;
+  width: 80%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  position: relative;
+}
+.navbar {
+  background-color: #202b3b;
+  height: 95%;
+  width: 7%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  position: relative;
+}
+.menu-icon {
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+.navbar ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.logo img {
+  width: 60%;
+  background-color: gray;
+  border-radius: 25px;
+  margin: 25px;
+}
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  color: white;
+}
+.navbar ul img {
+  width: 50%;
+}
+.navbar li {
+  list-style: none;
+}
+.navbar a {
+  text-decoration: none;
+  color: aqua;
+  font-size: smaller;
+}
+.mobile-nav-btn {
+  font-size: larger;
+  color: aqua;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  /* Global reset */
+  * {
     margin: 0;
     padding: 0;
-}
-body{
-    background-color: #0E0E0E;
+  }
+  body {
+    background-color: #0e0e0e;
     font-family: cursive;
-}
-.main-container{
-    background-color:#4F5762;
+  }
+
+  .main-container {
+    background-color: #4f5762;
     height: 100vh;
     margin-left: 35px;
     margin-right: 35px;
     display: flex;
     align-items: center;
-    justify-content: center; 
-}
-.container{
-    background-color: #0B131E;
+    justify-content: center;
+  }
+
+  .container {
+    background-color: #0b131e;
     height: 85vh;
     width: 80%;
     display: flex;
@@ -24,91 +111,98 @@ body{
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-}
-.navbar{
-    background-color: #202B3B;
+    position: relative;
+  }
+
+  .navbar {
+    background-color: #202b3b;
     height: 95%;
-    width: 10%;
+    width: 7%;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     gap: 30px;
     align-items: center;
-}
-.navbar ul{
+    position: relative;
+  }
+
+  .navbar ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1rem;
-}
-.logo img{
-    height: 70%;
+  }
+
+  .logo img {
     width: 60%;
-    padding: 1px;
     background-color: gray;
     border-radius: 25px;
     margin: 25px;
-}
-.logo{
+  }
+
+  .logo {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
     color: white;
-}
-.navbar ul  img{
+  }
+
+  .navbar ul img {
     width: 50%;
-}
-.navbar li{
+  }
+
+  .navbar li {
     list-style: none;
-}
-.navbar a{
+  }
+  .para {
+    display: none; /* Hide the .para div by default (for large screens) */
+  }
+  .navbar a {
     text-decoration: none;
-    color: white;
-}
-.main-page{
+    color: aqua;
+    font-size: smaller;
+  }
+  .main-page {
     height: 95%;
     width: 47%;
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-.input input{
-    height:28px;
+  }
+  .input input {
+    height: 28px;
     width: 100%;
-    background-color:#202B3B;
+    background-color: #202b3b;
     border: none;
     border-radius: 10px;
     color: white;
-    
-}
-.temperture{
+  }
+  .temperture {
     height: 30%;
     width: 100%;
     display: flex;
     color: white;
-   
-}
-.temp{
-   
+  }
+  .temp {
     width: 50%;
-   text-align: center;
-}
-.sun{
+    text-align: center;
+  }
+  .sun {
     height: 90%;
     width: 90%;
     text-align: center;
-    
-}
-.sun img{
+  }
+  .sun img {
     height: 100%;
     width: 50%;
-}
-.todayForecast{
+  }
+
+  .todayForecast {
     height: 30%;
     width: 100%;
-    background-color: #202B3B;
+    background-color: #202b3b;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -116,148 +210,318 @@ body{
     text-align: center;
     justify-content: center;
     color: white;
-    
-}
-.today-forecast-conatiner{
+  }
+  .para {
+    display: none;
+  }
+
+  .today-forecast-conatiner {
     display: flex;
-    gap: 25px;
-    
-}
-.today-forecast-child{
-    display: flex;
-    flex-direction: column;
     gap: 10px;
-    align-items: center;
-    text-align: center;
-}
-.today-forecast-child img{
-     height: 25px;
-}
-.airConditions{
+    justify-content: center;
+  }
+
+  .today-forecast-child {
+    height: 100%;
+    font-size: smaller;
+    font-size: larger;
+  }
+  .today-forecast-child img {
+    height: 25px;
+  }
+
+  .airConditions {
     height: 30%;
     width: 100%;
-   text-align: center;
+    text-align: center;
     color: white;
-    background-color: #202B3B;
+    background-color: #202b3b;
     border-radius: 10px;
-}
-.air-conatiner{
+  }
+
+  .air-conatiner {
     display: flex;
     justify-content: space-around;
-}
-.footer{
+  }
+
+  .footer {
     height: 95%;
     width: 38%;
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-button{
+  }
+
+  button {
     height: 30px;
-    background-color: #202B3B;
+    background-color: #202b3b;
     border: none;
     width: 100%;
     border-radius: 10px;
-    color: white;
-}
-.foreCast{
+    font-size: larger;
+  }
+
+  .foreCast {
     height: 93%;
     width: 100%;
-    background-color: #202B3B;
+    background-color: #202b3b;
     color: white;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     gap: 15px;
     text-align: center;
-}
-.foreCast-child{
+  }
+
+  .foreCast-child {
     display: flex;
     justify-content: space-around;
     height: 100%;
     align-items: center;
-}
-.foreCast-child img{
-    height:35px ;
+  }
+
+  .foreCast-child img {
+    height: 35px;
     width: 45px;
+  }
+
+  /* Media query for screens 950px and smaller */
+  @media (max-width: 950px) {
+    .navbar a {
+      font-size: 10px;
+    }
+    .navbar {
+      width: 10%;
+    }
+    .logo img {
+      height: 40px;
+      width: 42px;
+    }
+    .container {
+      padding: 20px;
+    }
+  }
+  @media (width <= 650px) {
+    .main-container {
+      height: 1300px;
+    }
+    .container {
+      flex-direction: column;
+      width: 300px;
+      height: 1280px;
+      background-color: white;
+    }
+    .main-page {
+      width: 100%;
+    }
+    .footer {
+      width: 100%;
+    }
+    .button {
+      width: 60px;
+      height: 30px;
+      margin: 5px;
+      background-color: #202b3b;
+      border-radius: 15px;
+      position: absolute;
+      top: 12px;
+      right: 1px;
+    }
+    .input {
+      width: 80%;
+      position: relative;
+    }
+
+    body {
+      background-color: white;
+    }
+  }
+
+  cursor: pointer;
+}
+#icon-child1 {
+  display: none;
+}
+.main-page {
+  height: 95%;
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.input input {
+  height: 28px;
+  width: 100%;
+  background-color: #202b3b;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+.temperture {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  color: white;
+}
+.temp {
+  width: 50%;
+  text-align: center;
+}
+.sun {
+  height: 90%;
+  width: 90%;
+  text-align: center;
+}
+.sun img {
+  height: 100%;
+  width: 50%;
 }
 
+.todayForecast {
+  height: 30%;
+  width: 100%;
+  background-color: #202b3b;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 15px;
+  text-align: center;
+  justify-content: center;
+  color: white;
+}
 
+.today-forecast-conatiner {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
 
+.today-forecast-child {
+  height: 100%;
+  font-size: smaller;
+}
 
+.today-forecast-child img {
+  height: 25px;
+}
 
+.airConditions {
+  height: 30%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-color: #202b3b;
+  border-radius: 10px;
+}
 
+.air-conatiner {
+  display: flex;
+  justify-content: space-around;
+}
 
+.footer {
+  height: 95%;
+  width: 38%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
+button {
+  height: 30px;
+  background-color: #202b3b;
+  border: none;
+  width: 100%;
+  border-radius: 10px;
+  font-size: larger;
+}
 
+.foreCast {
+  height: 93%;
+  width: 100%;
+  background-color: #202b3b;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+}
 
+.foreCast-child {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  align-items: center;
+}
 
+.foreCast-child img {
+  height: 35px;
+  width: 45px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 600px) {
-    .container{
-        display: flex;
-        flex-direction: column;
-    }
-    .navbar{
-        width: 100%;
-        height: 90px;
-        
-    }
-    .main-page{
-        width: 100%
-    }
-    .footer{
-        width: 100%
-    }   
+/* Media query for screens 950px and smaller */
+@media (max-width: 950px) {
+  .navbar a {
+    font-size: 10px;
+  }
+  .navbar {
+    width: 10%;
+    
+  }
+  .logo img {
+    height: 40px;
+    width: 42px;
+  }
+  .container {
+    padding: 20px;
+  }
+}
+@media (max-width: 650px) {
+  .main-container {
+    height: 1200px;
+  }
+  .container {
+    flex-direction: column;
+    width: 100%;
+    height: 1200px;
+    margin-top: 15px;
+  }
+  .main-page {
+    width: 100%;
+  }
+  .footer {
+    width: 100%;
+  }
+  .button {
+    width: 60px;
+    height: 24px;
+    font-size: smaller;
+    margin: 5px;
+    background-color: #202b3b;
+    border-radius: 15px;
+    position: absolute;
+    top: 15px;
+    right: 5px;
+  }
+  .input {
+    width: 80%;
+    position: relative;
+    
+  }
+  .navbar {
+    height: 40px;
+    width: 105%;
+    display: flex;
+    display: none;
+    justify-content: space-between;
+    padding-right: 15px;
+    flex-direction: row;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .today-forecast-child {
+    font-size: 20px;
+  }
 }
