@@ -21,10 +21,6 @@
           <div class="logo">
             <img src="./images/wind-blow.png" alt="logo" />
           </div>
-          <div class="menu-icon" onclick="toggleMenu()">
-            <i id="hamburger" class="fa-solid fa-xmark"></i>
-              <i id="close" class="fa-solid fa-bars"></i>
-          </div>
           <ul>
             <li><a href="">Weather</a></li>
             <li><a href="">Cities</a></li>
@@ -34,15 +30,15 @@
         </div>
         <div class="main-page">
           <div class="input">
-            <input type="text" placeholder="enter your city" />
+            <input type="text" placeholder="enter your city" id="input" />
           </div>
           <div class="temperture">
             <div class="temp">
-              <h1 style="color: aqua">Madrid</h1>
-              <p>chance of rain 0%</p>
+              <h3 id="city-name" style="color: aqua">Madrid</h3>
+              <p id="Pollution">Pollution</p>
               <br />
               <br />
-              <h1>31°</h1>
+              <h1 id="temperture">31°</h1>
             </div>
             <div class="sun">
               <img src="images/sun.png" alt="" />
@@ -70,17 +66,17 @@
               </div>
               <div class="today-forecast-child">
                 <p>6:00 pm</p>
-                <img src="images/weather.png" alt="clouds" />
+                <img src="images/weather.png" alt="clouds"/>
                 <p>25</p>
               </div>
               <div class="today-forecast-child">
                 <p>6:00 pm</p>
-                <img src="images/weather.png" alt="clouds" />
+                <img src="images/weather.png" alt="clouds"/>
                 <p>25</p>
               </div>
               <div class="today-forecast-child">
                 <p>6:00 pm</p>
-                <img src="images/weather.png" alt="clouds" />
+                <img src="images/weather.png" alt="clouds"/>
                 <p>25</p>
               </div>
             </div>
@@ -111,7 +107,7 @@
         </div>
         <div class="footer">
           <div class="button">
-            <button style="color: aqua">Search</button>
+            <button onclick="getWeatherData()" style="color: aqua">Search</button>
           </div>
           <div class="foreCast">
             <h5 style="color: aqua; font-size: 20px">7 days forcast</h5>
@@ -169,5 +165,6 @@
       </div>
     </div>
     <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </body>
 </html>
