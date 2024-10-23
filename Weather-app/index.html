@@ -22,10 +22,19 @@
             <img src="./images/wind-blow.png" alt="logo" />
           </div>
           <ul>
-            <li><a href="">Weather</a></li>
-            <li><a href="">Cities</a></li>
-            <li><a href="">Map</a></li>
-            <li><a href="">Settings</a></li>
+            <li><img src="images/weather.png" alt=""><br><a target="_blank" href="https://search.brave.com/search?q=today+weather&source=web">Weather</a></li>
+            <li><img src="images/hall.png" alt=""><br><a target="_blank" href="https://en.wikipedia.org/wiki/Lists_of_cities">Cities</a></li>
+            <li><img src="images/google-maps.png" alt=""><br><a target="_blank" href="https://www.google.com/maps">Map</a></li>
+            <li><img src="images/setting.png1.png" alt=""><br>
+              <details>
+                <summary>setting</summary>
+                <ul>
+                  <li><a href="">Profile</a></li>
+                  <li><a href="">Login</a></li>
+                  <li><a href="">About us</a></li>
+                  <li><a href="">Services</a></li>
+                </ul>
+              </details></li>
           </ul>
         </div>
         <div class="main-page">
@@ -42,7 +51,7 @@
               <h1 id="temperture">31°</h1>
             </div>
             <div class="sun">
-              <img src="images/sun.png" alt="" />
+              <img id="sunImage" src="images/sun.png" alt="" />
             </div>
           </div>
           <div class="todayForecast">
@@ -52,32 +61,37 @@
             <div class="today-forecast-conatiner">
               <div class="today-forecast-child">
                 <p>6:00 pm</p>
-                <img src="images/weather.png" alt="clouds" />
+                
+                <img src="images/clear.png" alt="clouds" />
                 <h6>clear</h6>
               </div>
               <div class="today-forecast-child">
-                <p>6:00 pm</p>
-                <img src="images/weather.png" alt="clouds" />
-                <h6>rain</h6>
+                <p>7:00 pm</p>
+                <img src="images/clear-sky.png" alt="clouds" />
+                
+                <h6>sunrise</h6>
               </div>
               <div class="today-forecast-child">
-                <p>6:00 pm</p>
-                <img src="images/weather.png" alt="clouds" />
-                <h6>clouds</h6>
-              </div>
-              <div class="today-forecast-child">
-                <p>6:00 pm</p>
-                <img src="images/weather.png" alt="clouds"/>
+               
+                <p>8:00 pm</p>
+                
+                <img src="images/rain.png" alt="clouds" />
                 <h6>rainig</h6>
               </div>
               <div class="today-forecast-child">
-                <p>6:00 pm</p>
-                <img src="images/weather.png" alt="clouds"/>
-                <h6>clouds</h6>
+                <p>9:00 pm</p>
+                <img src="images/snow.png" alt="clouds"/>
+                <h6>snow</h6>
+                
               </div>
               <div class="today-forecast-child">
-                <p>6:00 pm</p>
-                <img src="images/weather.png" alt="clouds"/>
+                <p>10:00 pm</p>
+                <img src="images/warm.png" alt="clouds"/>
+                <h6>warm</h6>
+              </div>
+              <div class="today-forecast-child">
+                <p>11:00 pm</p>
+                <img src="images/thunderstrom.png" alt="clouds"/>
                 <h6>sky</h6>
               </div>
             </div>
@@ -91,17 +105,16 @@
                 <h5>30</h5>
                 <br />
                 <h4>Wind-Degree</h4>
-                <h6>01</h6>
+                <h6 style="font-size: 14px;">01</h6>
               </div>
 
               <div style="font-size: 15px" class="air-child-2">
                 <img src="" alt="" />
                 <h4>Wind-Speed</h4>
                 <h5>0.2 km/h</h5>
-
                 <img src="" alt=""/>
-                <h4>UV index</h4>   
-                <h4>3</h4>
+                <h4>population</h4> 
+                <h6 style="font-size: 14px;">134644</h>
               </div>
             </div>
           </div>
@@ -114,57 +127,59 @@
             <h5 style="color: aqua; font-size: 20px">7 days forcast</h5>
             <div class="foreCast-child">
               <h4>Sunday</h4>
-              <img src="images/sun.png" alt="sun" />
-              <h5>sunny</h5>
-              <h6>36/22</h6>
+              <img src="images/clear-sky.png" alt="sun" />
+              <h5>23%</h5>
+              <h6>clear</h6>
             </div>
             <hr />
             <div class="foreCast-child">
               <h4>Monday</h4>
-              <img src="images/sun.png" alt="sun" />
-              <h5>sunny</h5>
-              <h6>36/22</h6>
+              <img src="images/rain.png" alt="sun" />
+              <h5>26%</h5>
+              <h6>rain</h6>
             </div>
             <hr />
             <div class="foreCast-child">
               <h4>Tuesday</h4>
-              <img src="images/sun.png" alt="sun" />
-              <h5>sunny</h5>
-              <h6>36/22</h6>
+              <img src="images/thunderstrom.png" alt="sun" />
+              <h5>29%</h5>
+              <h6>broken-clouds</h6>
             </div>
             <hr />
             <div class="foreCast-child">
               <h4>Wednes..</h4>
-              <img src="images/sun.png" alt="sun" />
-              <h5>sunny</h5>
-              <h6>36/22</h6>
+              <img src="images/warm.png" alt="sun" />
+              <h5>32%</h5>
+              <h6>warm</h6>
             </div>
             <hr />
             <div class="foreCast-child">
               <h4>Thursday</h4>
-              <img src="images/sun.png" alt="sun" />
-              <h5>sunny</h5>
-              <h6>36/22</h6>
+              <img src="images/clear-sky.png" alt="sun" />
+              <h5>35%</h5>
+              <h6>sunset</h6>
             </div>
             <hr />
             <div class="foreCast-child">
               <h4>Friday</h4>
               <img src="images/sun.png" alt="sun" />
-              <h5>sunny</h5>
-              <h6>36/22</h6>
+              <h5>38%</h5>
+              <h6>sunny</h6>
             </div>
             <hr />
             <div class="foreCast-child">
               <h4>Saturday</h4>
-              <img src="images/sun.png" alt="sun" />
-              <h5>sunny</h5>
-              <h6>36/22</h6>
+              <img src="images/snow.png" alt="sun" />
+              <h5>41%</h5>
+              <h6>snow</h6>
             </div>
           </div>
         </div>
         ;
       </div>
     </div>
+      <img id="warmImage" src="" alt="">
+    
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </body>

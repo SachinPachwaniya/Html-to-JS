@@ -48,9 +48,12 @@ body {
 .navbar ul {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+  text-align: center;
+  gap: 15px;
+}
+details{
+  color: aqua;
+  cursor: pointer;
 }
 .logo img {
   width: 60%;
@@ -70,6 +73,11 @@ body {
 }
 .navbar li {
   list-style: none;
+  cursor: pointer;
+}
+.navbar li :hover{
+  color: whitesmoke;
+  
 }
 .navbar a {
   text-decoration: none;
@@ -83,7 +91,7 @@ body {
   flex-direction: column;
   gap: 15px;
   /* Global reset */
-  * {
+  *{
     margin: 0;
     padding: 0;
   }
@@ -222,10 +230,11 @@ body {
 
   .today-forecast-child{
     height: 100%;
-    font-size: 154px;
+    font-size: 104px; 
   }
   .today-forecast-child img{
-    height: 25px;
+    height: 45px;
+    border-radius: 15px;
   }
   .airConditions{
     height: 30%;
@@ -235,12 +244,14 @@ body {
     background-color: #202b3b;
     border-radius: 10px;
   }
-
-  .air-conatiner {
+  .air-conatiner{
     display: flex;
     justify-content: space-around;
   }
-
+  .air-conatiner:hover{
+    color: red;
+  }
+  
   .footer {
     height: 95%;
     width: 38%;
@@ -248,7 +259,6 @@ body {
     flex-direction: column;
     gap: 10px;
   }
-
   button {
     height: 30px;
     background-color: #202b3b;
@@ -280,6 +290,7 @@ body {
   .foreCast-child img {
     height: 35px;
     width: 45px;
+    border-radius: 12px;
   }
 
   /* Media query for screens 950px and smaller */
@@ -389,20 +400,24 @@ body {
 
 .today-forecast-conatiner {
   display: flex;
-  gap: 18px;
+  gap: 8px;
+  
   justify-content: center;
 }
 
 .today-forecast-child {
   height: 100%;
   
+  
 }
 .today-forecast-child h6{
-  font-size: larger;
+  font-size: smaller;
 }
 
 .today-forecast-child img {
-  height: 30px;
+  height: 35px;
+  width: 45px;
+  border-radius: 20px;
 }
 
 .airConditions {
@@ -458,10 +473,11 @@ button {
 .foreCast-child img {
   height: 35px;
   width: 45px;
+  border-radius: 45px;
 }
 
 /* Media query for screens 950px and smaller */
-@media (max-width: 1050px) {
+@media (max-width: 950px) {
   .navbar a {
     font-size: 10px;
   }
@@ -484,6 +500,15 @@ button {
   }
   .sun img{
     width: 130px;
+  }
+  .today-forecast-child{
+    font-size:13px;
+    font-weight: bold;
+    
+  }
+  .today-forecast-child img{
+    height: 25px;
+    width: 25px;
   }
 
 }
@@ -531,16 +556,11 @@ button {
   .navbar ul {
     display: none;
   }
-  .today-forecast-child {
-    font-size: 15px;
-    
-  }
+  
   .sun img{
     width: 150px;
   }
-  .today-forecast-conatiner{
-    gap: 12px;
-    
-  }
+  
+ 
   
 }
