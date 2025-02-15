@@ -14,7 +14,7 @@ Welcome to my personal portfolio website! This showcases my skills, projects, an
 3. **[Weather-App](https://github.com/SachinPachwaniya/Html-to-JS/tree/main/Weather-app)**  
    - "A weather app displaying real-time weather data using an API with a clean UI."  
 
-4. **[Trvel-Website](projects/stopwatch/)**  
+4. **[Trvel-Website](https://github.com/SachinPachwaniya/Html-to-JS/tree/main/travel%20website)**  
    - "Travel website showcasing destinations, with images and descriptions, using only HTML and CSS." for a couple of seconds
    "A visually engaging travel website showcasing popular destinations, itineraries, and booking info."  
 
