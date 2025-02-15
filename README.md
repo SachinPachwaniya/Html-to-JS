@@ -5,20 +5,23 @@ A collection of small projects built using **HTML, CSS, and JavaScript** to prac
 
 ## 🛠 Projects  
 
-1. **[pricing-table](https://github.com/SachinPachwaniya/Html-to-JS/tree/main/Pricing%20Table)**  
-   - A basic calculator that performs arithmetic operations.  
+1. **[Portfolio](https://github.com/SachinPachwaniya/Html-to-JS/tree/main/Pricing%20Table)**  
+# 🌟 My Portfolio  
+Welcome to my personal portfolio website! This showcases my skills, projects, and experience as a web developer.  
+ 
    
-2. **[Weather App](projects/weather-app/)**  
-   - Fetches real-time weather data using an API and displays temperature, humidity, and more.  
+2. **[Pricing-Table](projects/weather-app/)**  
+   -"A responsive pricing table with multiple plans, features, and call-to-action buttons using Html-CSS."
 
-3. **[To-Do List](projects/todo-list/)**  
-   - A simple task manager where users can add, delete, and mark tasks as completed.  
+3. **[Weather-App](projects/todo-list/)**  
+   - "A weather app displaying real-time weather data using an API with a clean UI."  
 
-4. **[Stopwatch](projects/stopwatch/)**  
-   - A digital stopwatch with start, stop, and reset functionality.  
+4. **[Trvel-Website](projects/stopwatch/)**  
+   - "Travel website showcasing destinations, with images and descriptions, using only HTML and CSS." for a couple of seconds
+   "A visually engaging travel website showcasing popular destinations, itineraries, and booking info."  
 
-5. **[Rock-Paper-Scissors Game](projects/rock-paper-scissors/)**  
-   - A fun game where users can play against the computer.  
+5. **[Website-of-Lobe](projects/rock-paper-scissors/)**  
+   - "A modern and responsive website inspired by Lobe, featuring a clean UI and smooth design."  
 
 (More projects coming soon! 😉)  
 
