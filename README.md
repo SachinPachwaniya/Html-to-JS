@@ -11,7 +11,7 @@ Welcome to my personal portfolio website! This showcases my skills, projects, an
 2. **[Pricing-Table](https://github.com/SachinPachwaniya/Html-to-JS/tree/main/Pricing%20Table)**  
    -"A responsive pricing table with multiple plans, features, and call-to-action buttons using Html-CSS."
 
-3. **[Weather-App](projects/todo-list/)**  
+3. **[Weather-App](https://github.com/SachinPachwaniya/Html-to-JS/tree/main/Weather-app)**  
    - "A weather app displaying real-time weather data using an API with a clean UI."  
 
 4. **[Trvel-Website](projects/stopwatch/)**  
