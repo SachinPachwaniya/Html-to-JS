@@ -5,7 +5,7 @@ A collection of small projects built using **HTML, CSS, and JavaScript** to prac
 
 ## 🛠 Projects  
 
-1. **[Calculator](projects/calculator/)**  
+1. **[pricing-table](https://github.com/SachinPachwaniya/Html-to-JS/tree/main/Pricing%20Table)**  
    - A basic calculator that performs arithmetic operations.  
    
 2. **[Weather App](projects/weather-app/)**  
