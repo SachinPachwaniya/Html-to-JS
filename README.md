@@ -18,7 +18,7 @@ Welcome to my personal portfolio website! This showcases my skills, projects, an
    - "Travel website showcasing destinations, with images and descriptions, using only HTML and CSS." for a couple of seconds
    "A visually engaging travel website showcasing popular destinations, itineraries, and booking info."  
 
-5. **[Website-of-Lobe](projects/rock-paper-scissors/)**  
+5. **[Website-of-Lobe](https://github.com/SachinPachwaniya/Html-to-JS/tree/main/website-of-lobe)**  
    - "A modern and responsive website inspired by Lobe, featuring a clean UI and smooth design."  
 
 (More projects coming soon! 😉)  
