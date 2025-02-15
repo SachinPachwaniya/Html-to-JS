@@ -5,8 +5,7 @@ A collection of small projects built using **HTML, CSS, and JavaScript** to prac
 
 ## 🛠 Projects  
 
-1. **[Portfolio](https://github.com/SachinPachwaniya/Html-to-JS/tree/main/Pricing%20Table)**  
-# 🌟 My Portfolio  
+1. **[Portfolio](https://github.com/SachinPachwaniya/Html-to-JS/tree/main/Pricing%20Table)**   
 Welcome to my personal portfolio website! This showcases my skills, projects, and experience as a web developer.  
  
    
