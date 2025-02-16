@@ -6,13 +6,13 @@ fully motivated to continue learning and improving. This is the first project I'
 and there’s more to come!"**  
 
 1. **[A simple Webpage](https://github.com/SachinPachwaniya/Html-to-JS/tree/main/first-project)**   
-    A basic webpage built using **HTML** and **CSS** to practice frontend development.  
+    A basic webpage built using **HTML** and **CSS** to practice frontend development.
 
 
-
-
+<br>
+<br>
+<br>
 🔥 **These projects I made 3 months ago.** 🚀  
- 
  <br>
 A collection of small projects built using **HTML, CSS, and JavaScript** to practice and improve web development skills.
 ## 🛠 Projects 
