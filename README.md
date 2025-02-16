@@ -11,7 +11,7 @@ and there’s more to come!"**
 
 
 
- <u>These projects i made 3 months ago.</u>
+ <u>These projects i made 3 months ago.</u> <br>
 A collection of small projects built using **HTML, CSS, and JavaScript** to practice and improve web development skills.
 ## 🛠 Projects 
 
