@@ -5,8 +5,7 @@ I couldn't stay consistent with my full-stack development journey. But now, I'm 
 fully motivated to continue learning and improving. This is the first project I've uploaded,
 and there’s more to come!"**  
 
-1. **[A simple Webpage](https://github.com/SachinPachwaniya/Html-to-JS/tree/main/website-of-lobe)**  
-   - # Simple Webpage 🌐  
+1. **[A simple Webpage](https://github.com/SachinPachwaniya/Html-to-JS/tree/main/website-of-lobe)**   
     A basic webpage built using **HTML** and **CSS** to practice frontend development.  
 
 
