@@ -1,9 +1,20 @@
 # HTML-CSS and JavaScript Projects 🚀  
 
-A collection of small projects built using **HTML, CSS, and JavaScript** to practice and improve web development skills.  
- 
+**"I built this webpage using HTML and CSS after a gap of 3 months. Due to a viral illness,
+I couldn't stay consistent with my full-stack development journey. But now, I'm back on track,
+fully motivated to continue learning and improving. This is the first project I've uploaded,
+and there’s more to come!"**  
 
-## 🛠 Projects  
+1. **[A simple Webpage](https://github.com/SachinPachwaniya/Html-to-JS/tree/main/website-of-lobe)**  
+   - # Simple Webpage 🌐  
+    A basic webpage built using **HTML** and **CSS** to practice frontend development.  
+
+
+
+
+ <u>These projects i made 3 months ago.</u>
+A collection of small projects built using **HTML, CSS, and JavaScript** to practice and improve web development skills.
+## 🛠 Projects 
 
 1. **[Portfolio]( https://github.com/SachinPachwaniya/Html-to-JS/tree/main/Portfolio)**   
 Welcome to my personal portfolio website! This showcases my skills, projects, and experience as a web developer.  
@@ -21,7 +32,7 @@ Welcome to my personal portfolio website! This showcases my skills, projects, an
 5. **[Website-of-Lobe](https://github.com/SachinPachwaniya/Html-to-JS/tree/main/website-of-lobe)**  
    - "A modern and responsive website inspired by Lobe, featuring a clean UI and smooth design."  
 
-(More projects coming soon! 😉)  
+(More projects coming soon! 😉)
 
 ## 🔧 Technologies Used  
 
