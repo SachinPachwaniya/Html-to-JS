@@ -8,8 +8,8 @@ button.addEventListener("click", function () {
   const computer = Math.floor(Math.random() * 5) + 1;
   computerNumber.innerHTML = `computer chose:-${computer} `;
   let value = input.value;
-  if (isNaN(value) || value === "") {
-    alert("Only numbers are allowed!");
+  if (isNaN(value) || value === "" || value > 5) {
+    alert("Only valid numbers (1-5) are allowed!");
     return;
   } else if (value > computer) {
     para.style.color = "lightblue";
@@ -17,7 +17,7 @@ button.addEventListener("click", function () {
   } else if (value == computer) {
     para.style.color = "red";
     para.innerHTML = "Draw!";
-  } else {
+  } else{
     para.style.color = "lightpink";
     para.innerHTML = "computer win";
   }
