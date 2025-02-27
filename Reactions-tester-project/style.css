@@ -1,0 +1,15 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: blueviolet;
+}
+.box{
+    height: 100px;
+    width: 200px;
+    background-color: aquamarine;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+}
