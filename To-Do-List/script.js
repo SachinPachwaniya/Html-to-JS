@@ -1,52 +1,89 @@
+window.onload = () => {
+    document.querySelector("nav").addEventListener("click", (event) => {
+    if (event.target.closest(".logo")) {
+      alert("logo aahca nhi laga kya chl hat");
+    } else if (event.target.closest(".heading")) {
+      alert("heading ko kyu preshaan kar rha hai bhai hahahha");
+    }
+  });
+  const inputBar = document.getElementById("inputBar");
+  const addBtn = document.getElementById("addButton");
+
+  addBtn.disabled = true
+
+  inputBar.addEventListener("input", () => {
+    if (inputBar.value.trim() === "") {
+      addBtn.disabled = true;  // Disable if empty
+    } else {
+      addBtn.disabled = false; // Enable if has text
+    }
+  });
+};
+
+
 function addTask() {
   const inputBar = document.getElementById("inputBar");
   let result = inputBar.value.trim();
-  if(result===""){
-    alert("enter your lists")
-  }else{
 
+
+    const taskList = document.getElementById("tasksLists");
+    const li = document.createElement("li");
+
+    const taskTextElement = document.createElement("span");
+    taskTextElement.textContent = result;
+    taskTextElement.classList.add("task-text");
+    const deleteBtn = createDeleteButton();
+    const updateBtn = updateButton();
+    const checkBtn = checkBox();
+
+    deleteBtn.addEventListener("click", () => {
+      li.remove();
+    });
+
+    updateBtn.addEventListener("click", () => {
+      const newText = prompt("update your text", taskTextElement.textContent);
+      if (newText !== null && newText.trim() !== "") {
+        taskTextElement.textContent = newText;
+      }
+    });
+
+    checkBtn.addEventListener("click", () => {
+      if (checkBtn.checked === true) {
+        taskTextElement.style.textDecoration = "line-through";
+      } else {
+        taskTextElement.style.textDecoration = "none";
+      }
+    });
+
+    const btnContainer = document.createElement("div");
+    btnContainer.classList.add("task-buttons");
+    btnContainer.appendChild(checkBtn);
+    btnContainer.appendChild(updateBtn);
+    btnContainer.appendChild(deleteBtn);
+
+    li.appendChild(taskTextElement);
+    li.appendChild(btnContainer);
+
+    taskList.appendChild(li);
+    inputBar.value = "";
   
-
-  const taskList = document.getElementById("tasksLists");
-  const li = document.createElement("li");
-
-  const taskTextElement = document.createElement("span");
-  taskTextElement.textContent = result;
-  const deleteBtn = createDeleteButton(); // ✅ call kara apna chhota function
-
-  // 👇 Ab delete ka kaam set karo
-  deleteBtn.addEventListener("click", () => {
-    li.remove(); // ya taskList.removeChild(li);
-  });
-
-  const updateBtn = updateButton();
-  updateBtn.addEventListener("click", () => {
-    const newText = prompt("update your text", taskTextElement.textContent);
-    if (newText !== null && newText.trim() !== "") {
-      taskTextElement.textContent = newText;
-    }
-  });
-  li.appendChild(taskTextElement)
-  li.appendChild(updateBtn);
-  li.appendChild(deleteBtn);
-
-  taskList.appendChild(li);
-  inputBar.value = "";
-}}
+}
 
 function createDeleteButton() {
   const deleteButton = document.createElement("p");
-  deleteButton.textContent = "×";
-   deleteButton.style.borderRadius = "10px";
-  deleteButton.style.cursor = "pointer";
-  deleteButton.style.color = "red";
-  deleteButton.style.backgroundColor = "transparent";
+  deleteButton.textContent = "Delete";
   return deleteButton;
 }
 
 function updateButton() {
   const updateButton = document.createElement("p");
   updateButton.textContent = "update";
-  updateButton.style.borderRadius = "10px";
   return updateButton;
+}
+
+function checkBox() {
+  const checkBox = document.createElement("input");
+  checkBox.type = "checkbox";
+  checkBox.id = "myCheckBox";
+  return checkBox;
 }

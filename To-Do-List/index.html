@@ -1,26 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-Do-List-App</title>
-    <link rel="stylesheet" href="style.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="to-do-list.png" alt="" />
+      </div>
+      <div class="heading">
+        <h1>To do list App</h1>
+      </div>
+      <div class="Task-update">
+        <label for="tasks">About your Performance:</label>
+        <select id="tasks" name="tasks">
+          <option value="" disabled selected>-- Select Task --</option>
+          <option value="pending">Pending</option>
+          <option value="completed">Completed</option>
+          <option value="Today-performance">Today Performance</option>
+        </select>
+      </div>
+    </nav>
     <div class="container">
-        <div class="to-do-box">
-            <h1>To-Do-List-App</h1>
-            <div>
-            <input type="text" placeholder="enter your tasks" id="inputBar">
-            <button onclick="addTask()">Add-Here</button>
-            </div>
-            <ul id="tasksLists">
-               
-                
-            </ul>
+      <div class="to-do-box">
+        <div class="inputButtonSections">
+          <input type="text" placeholder="enter your tasks" id="inputBar"/>
+          <button id="addButton" onclick="addTask()">Add-Here</button>
         </div>
+        <ul id="tasksLists"></ul>
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
