@@ -11,6 +11,7 @@ nav {
   height: 100px;
   padding: 0 60px;
   border-radius: 10px;
+  position: relative;
 }
 .logo img {
   height: 100px;
@@ -18,7 +19,6 @@ nav {
 .heading h1 {
   font-size: 46px;
   font-variant: small-caps;
-  margin-left: 150px;
 }
 .Task-update {
   font-size: 26px;
@@ -68,7 +68,7 @@ ul li {
   gap: 20px;
   background-color: #ffb800;
   padding: 10px 50px;
-  margin: 10px auto;
+   margin: 10px auto;         
   width: 30%;
   border-radius: 8px;
   font-weight: bold;
@@ -95,4 +95,111 @@ ul li {
 .task-buttons input {
   width: 30px;
 }
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    background-color: lightgreen;
+  }
+  nav{
+    height: 75px;
+    padding: 0 10px;
+  }
+  .logo img{
+    height: 50px;
+  }
+    .heading h1 {
+    font-size: 25px;
+    color: red;
+  }
+   .Task-update {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .Task-update select {
+    width: 30px;
+    height: 30px;
+    font-size: 10px;
+  }
+  #tasks {
+    width: 80px;
+  }
+   .inputButtonSections input {
+    height: 25px;
+  }
+  .inputButtonSections button {
+    margin: 10px;
+    padding: 10px 15px;
+  }
+    ul li {
+    display: flex;
+    flex-direction: row;      
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 10px -18px;
+    padding: 10px;
+    gap: 10px;
+  }
+}
+@media (max-width: 480px) {
+  nav {
+    height: 50px;
+    padding: 0 10px;
+  }
+  .logo img {
+    height: 50px;
+  }
+  .heading h1 {
+    font-size: 15px;
+    color: blue;
+  }
+  .Task-update {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .Task-update select {
+    width: 20px;
+    height: 20px;
+    font-size: 8px;
+  }
+  #tasks {
+    width: 50px;
+  }
+  .inputButtonSections input {
+    height: 30px;
+  }
+  .inputButtonSections button {
+    margin: 10px;
+    padding: 10px 15px;
+  }
+   ul li {
+    display: flex;
+    flex-direction: row;      
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 10px -18px;
+    padding: 10px;
+    gap: 10px;
+  }
 
+  .task-text {
+    flex: 1;                 
+    font-size: 14px;
+  }
+
+  .task-buttons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .task-buttons p {
+    font-size: 12px;
+    padding: 4px 6px;
+  }
+
+  .task-buttons input {
+    width: 16px;
+    height: 16px;
+  }
+}

@@ -1,11 +1,14 @@
 window.onload = () => {
+
     document.querySelector("nav").addEventListener("click", (event) => {
     if (event.target.closest(".logo")) {
-      alert("logo aahca nhi laga kya chl hat");
+      location.reload();
+      
     } else if (event.target.closest(".heading")) {
       alert("heading ko kyu preshaan kar rha hai bhai hahahha");
     }
   });
+
   const inputBar = document.getElementById("inputBar");
   const addBtn = document.getElementById("addButton");
 
