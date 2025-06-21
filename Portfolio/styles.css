@@ -4,6 +4,7 @@
 }
 .container{
   display: flex;
+  text-align: center;
 }
 nav{
   background-color: blue;
@@ -70,5 +71,12 @@ section h1{
   nav img{
     height: 90px;
   }
-  
+}
+@media (max-width:468px){
+  .section p{
+    display: none;
+  }
+  nav a{
+    font-size: small;
+  }
 }
