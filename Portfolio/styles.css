@@ -66,6 +66,7 @@ section h1{
 }
 .icons{
   font-size: 35px;
+  color: blue;
 }
 @media (max-width:768px) {
   nav img{
